@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   April 1999 as a 501c3 club by a variety of knowledgeable, family-friendly, 
   herp enthusiasts, educators, and herp advocates who promote responsible husbandry 
   through education, conservation and community awareness of all amphibians and reptiles.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/swmhs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
