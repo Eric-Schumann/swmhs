@@ -7,7 +7,7 @@ layout: default
 <section class="section">
     <div class="container">
         {% if author %}
-        <h1>By <a href="{{ author.url }}">{{ page.author }}</a></h1>
+        <h1>By <a href="{{ site.baseurl }}{{ author.url }}">{{ page.author }}</a></h1>
         {% else %}
         <h1>By {{ page.author }}</h1>
         {% endif %}

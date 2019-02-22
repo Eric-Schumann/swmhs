@@ -25,7 +25,9 @@
             <li class="d-block">
               <span class="d-block">Address:</span>
               <span class="text-white">600 W Sunshine St, Springfield, MO 65807</span></li>
-            <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1 242 4942 290</span></li>
+              {% if site.phone %}
+              <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">{{ site.phone }}</span></li>
+              {% endif %}
             <li class="d-block"><span class="d-block">Email:</span><span class="text-white">{{ site.email }}</span></li>
           </ul>
         </div>
