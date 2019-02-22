@@ -7,43 +7,40 @@ description: Here is what we are up to this year.
 {% include page-top.html %}
 
 
-      <section class="element-animate worship-time">
-          
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6">
-                    <div class="bg campmeeting">
-                        <h1>Meetings</h1>
-                        <h5>Open to the public.</h5>
-                        <p>Meetings take place on the second Thursday of each month.  Thd doors open at 6:30pm and the meeting
-                        begins at 7:00pm.  For every meeting an SWMHS club member will give a reptile themed presentation.  
-                        Afterwards members will stay and discuss plans for the future and socialize.
-                        </p>
-                        <p>Anyone can become a member.  Membership dues are $15 per person or $20 for the entire family.  
-                        Dues go towards funding SWMHS events or field trips.  Events and field trips are open to payed members only.
-                        </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                        Our club has several elected positions which members can run for each year.  
-                        This year our positions are as follows.
-                        <ul>
-                        {% assign sorted_members = site.members | sort: 'rank' %}
-                        {% for member in sorted_members %}
-                            <li>{{ member.position }}:  <a href="{{ member.url }}">{{ member.name }}</a></li>
-                        {% endfor %}
-                        </ul>
+      <section class="element-animate worship-time mt-5">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="bg campmeeting">
+                    <h1>Meetings</h1>
+                    <h5>Open to the public.</h5>
+                    <p>Meetings take place on the second Thursday of each month.  Thd doors open at 6:30pm and the meeting
+                    begins at 7:00pm.  For every meeting an SWMHS club member will give a reptile themed presentation.  
+                    Afterwards members will stay and discuss plans for the future and socialize.
                     </p>
-                  </div>
+                    <p>Anyone can become a member.  Membership dues are $15 per person or $20 for the entire family.  
+                    Dues go towards funding SWMHS events or field trips.  Events and field trips are open to payed members only.
+                    </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p>
+                    Our club has several elected positions which members can run for each year.  
+                    This year our positions are as follows.
+                    <ul>
+                    {% assign sorted_members = site.members | sort: 'rank' %}
+                    {% for member in sorted_members %}
+                        <li>{{ member.position }}:  <a href="{{ member.url }}">{{ member.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </p>
               </div>
           </div>
         </section>
         
         <section class="section element-animate">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                  <iframe height="100%" width="80%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=600%20W%20Sunshine%20St%2C%20Springfield%2C%20MO%2065807&key=AIzaSyBqvII44r6pKLGch4Fbhx70zS9B6VhWvTs" allowfullscreen></iframe>  
+            <div class="row">
+                <div class="col-md-12 justify-content-center">
+                  <iframe height="500" width="80%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=600%20W%20Sunshine%20St%2C%20Springfield%2C%20MO%2065807&key=AIzaSyBqvII44r6pKLGch4Fbhx70zS9B6VhWvTs" allowfullscreen></iframe>  
                 </div>
             </div>
         </section>
