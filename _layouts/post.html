@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include page-top.html %}
+{% assign author = site.members | where: 'name', page.author | first %}
+<section class="section">
+    <div class="container">
+        {% if author %}
+        <h1>By <a href="{{ author.url }}">{{ page.author }}</a></h1>
+        {% else %}
+        <h1>By {{ page.author }}</h1>
+        {% endif %}
+        <h5>{{ page.date | date_to_string }}</h5>
+        <p>{{ content }}</p>
+        <a href="/posts" class="btn btn-sm btn-outline-primary">Back to posts</a>
+    </div>
+</section>

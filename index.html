@@ -1,0 +1,32 @@
+---
+  title: Southwest Missouri Herpetological Society
+  description: "Club Mission - The Southwest Missouri Herpetological Society (SWMHS) was created in 
+  April 1999 as a 501c3 club by a variety of knowledgeable, family-friendly, 
+  herp enthusiasts, educators, and herp advocates who promote responsible husbandry 
+  through education, conservation and community awareness of all amphibians and reptiles."
+---
+{% include page-top.html %}
+
+<section class="section ">
+  <div class="container">
+    <div class="row mb-5 justify-content-center element-animate">
+      <div class="col-md-12">
+        <h2>Latest Posts</h2>
+      </div>
+    </div>
+    <div class="row mb-5">
+
+        {% for post in site.posts limit:6 %}
+          <div class="col-md-6 col-lg-4 mb-4 element-animate">
+              <div class="media custom-media d-block">
+                  <!--<a href="{{ post.url }}"><img class="mr-3" width="30" src="/assets/images/{{ post.image }}" alt="Generic placeholder image"></a>-->
+                  <div class="media-body">
+                      <h3 class="mt-0"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                      <p class="post-meta">{{ post.date | date_to_string }}, <a href="{{ post.author.url }}">{{ post.author }}</a></p>
+                      <p>{{ post.excerpt }}</p>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+    </div>
+</section>
